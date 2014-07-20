@@ -1,0 +1,3 @@
+\ProvidesFile{diss.def}[2003/02/03 Dissertacao de Mestrado]
+\newcommand{\titlepagespecificinfo}{\dissspecificinfo}
+\def\@cipspecificinfo{\dissname}
