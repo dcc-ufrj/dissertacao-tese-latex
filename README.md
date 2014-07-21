@@ -5,7 +5,3 @@ Modelo de dissertação e teses em latex. Para alternar o documentclass entre:
 
 1. `\documentclass[diss]{dcc-nce}` para dissertação
 2. `\documentclass[tese]{dcc-nce}` para tese
-
-Problemas:
-
-Atualmente a bibliografia está com problemas.
