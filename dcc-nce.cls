@@ -703,17 +703,14 @@
 %\setlength{\bibhang}{0pt}
 %\let\cite\citep
 
-%
-% comandos DEPRECATED
-% mantidos aqui somente para compatibilidade, nao constam mais do exemplo
-% sugere-se remove-los a partir de julho/2003
-% 07/dez/2002 - avila
-%
-\newcommand{\cip}{}
-\newenvironment{dedicatoria}{%
-        \clearpage%
-        \mbox{}\vfill\begin{flushright}
+\newenvironment{dedicatoria}{
+	\clearpage
+	\mbox{}
+	\vfill
+	\begin{flushright}
+	\sffamily\itshape
 }{
-        \end{flushright}
+	\end{flushright}
 }
+
 \newenvironment{agradecimentos}{\chapter*{Agradecimentos}}{}
