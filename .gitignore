@@ -4,6 +4,7 @@
 *.lof
 *.bbl
 *.log
+*.lot
 *.toc
 *.dvi
 *.aux
@@ -24,4 +25,5 @@ tmp
 /tmp
 /obj
 .externalToolBuilders/
+*.fdb_latexmk
 
