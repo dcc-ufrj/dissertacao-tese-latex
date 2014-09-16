@@ -563,37 +563,39 @@
 %==============================================================================
 % Resumo (abstract) e Abstract (englishabstract)
 %==============================================================================
-\renewenvironment{abstract}{%
+\renewenvironment{abstract}{
+	\chapter*{\abstractname}
+	\noindent\@authoralast, \@authorafirst. \textbf{\@title}. \@date. \pageref{LastPage}~f. Disserta\c{c}\~ao (Mestrado em Inform\'atica) - PPGI, Instituto de Matem\'atica, Instituto T\'ercio Pacitti de Aplica\c{c}\~oes e Pesquisas Computacionais, Universidade Federal do Rio de Janeiro, \@city, \@date.\\\\
+	\par
+}{
+	\par
+	\vfill
+	\noindent\textbf{\keywordsname:} \@abstractkw.
+}
+\newenvironment{englishabstract}[2]{
+	\if@openright
+		\cleardoublepage
+	\else
+		\clearpage
+	\fi
+	\gdef\@englishkeywords{#2}%
+	\begin{otherlanguage}{english}
 		\chapter*{\abstractname}
 		\noindent\@authoralast, \@authorafirst. \textbf{\@title}. \@date. \pageref{LastPage}~f. Disserta\c{c}\~ao (Mestrado em Inform\'atica) - PPGI, Instituto de Matem\'atica, Instituto T\'ercio Pacitti de Aplica\c{c}\~oes e Pesquisas Computacionais, Universidade Federal do Rio de Janeiro, \@city, \@date.\\\\
-}{%
-        \par\vfill
-        \noindent\textbf{\keywordsname:} \@abstractkw.
-}
-\newenvironment{englishabstract}[2]{%
-        \if@openright\cleardoublepage\else\clearpage\fi%
-        \gdef\@englishkeywords{#2}%
-     %\iflanguage{english}{
-     %           \begin{otherlanguage}{english}
-     %   }{
-     %           \begin{otherlanguage}{brazilian}
-     %   }
-        	\begin{otherlanguage}{english}
 
-                \chapter*{\abstractname}
-				
-	        	\begin{otherlanguage}{brazilian}
-						\noindent\@authoralast, \@authorafirst. \textbf{\@title}. \@date. \pageref{LastPage}~f. Disserta\c{c}\~ao (Mestrado em Inform\'atica) - PPGI, Instituto de Matem\'atica, Instituto T\'ercio Pacitti, Universidade Federal do Rio de Janeiro, \@city, \@date.\\\\
-				\end{otherlanguage}
-                % os 22ex abaixo fazem o título em inglês iniciar a
-                % aproximadamente 5cm da borda superior
-                \noindent\raisebox{22ex}[0pt][0pt]{%
-                       \parbox[t]{\textwidth}{\centering\textbf{#1}}
-                }\vspace{-\baselineskip}\par
+        % os 22ex abaixo fazem o título em inglês iniciar a
+        % aproximadamente 5cm da borda superior
+        \noindent\raisebox{22ex}[0pt][0pt]{%
+			\parbox[t]{\textwidth}{\centering\textbf{#1}}
+		}
+
+		\vspace{-\baselineskip}
+		\par
 }{
-        \par\vfill
+        \par
+        \vfill
         \noindent\textbf{\keywordsname:} \@englishkeywords.
-        \end{otherlanguage}
+	\end{otherlanguage}
 }
 
 
