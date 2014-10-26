@@ -8,6 +8,7 @@
 *.toc
 *.dvi
 *.aux
+*.fls
 .*.sw[a-z]
 *.un~
 Session.vim
