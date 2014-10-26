@@ -274,10 +274,10 @@
         \parbox[b]{\titlepagewinwidth}{%
         \centering\vbox to \titlepagewinheight{%
                 \vspace*{\fill}
-                \MakeUppercase{\@authora}\\
-                \@ifundefined{@authorb}{}{\MakeUppercase{\@authorb}\\}%
-                \@ifundefined{@authorc}{}{\MakeUppercase{\@authorc}\\}%
-                \@ifundefined{@authord}{}{\MakeUppercase{\@authord}\\}%
+                \MakeUppercase{\textbf{\@authora}}\\
+                \@ifundefined{@authorb}{}{\MakeUppercase{\textbf{\@authorb}}\\}%
+                \@ifundefined{@authorc}{}{\MakeUppercase{\textbf{\@authorc}}\\}%
+                \@ifundefined{@authord}{}{\MakeUppercase{\textbf{\@authord}}\\}%
                 \vspace{\stretch{4}}
                 {\large\textbf{\MakeUppercase{\@title}}\par}
                 \vfill
