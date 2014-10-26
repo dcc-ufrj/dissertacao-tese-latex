@@ -485,13 +485,10 @@
                 }
 
         }
-        \end{center}
-		\vfill
-		\vfill
-		\vfill
-        \centerline{\@city}
-		\centerline{\@date}
-
+	\end{center}
+	\vfill
+	\vfill
+	\vfill
 }
 
 
