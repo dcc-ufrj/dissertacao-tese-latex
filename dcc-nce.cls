@@ -106,7 +106,7 @@
 \def\ps@iiufrgs{
         \let\@oddfoot\@empty
         \let\@evenfoot\@empty
-        \def\@evenhead{{\small\thepage}}
+        \def\@evenhead{\hspace*{\fill}{\small\thepage}}
         \def\@oddhead{\hspace*{\fill}{\small\thepage}}
 }
 %\pagestyle{empty}
