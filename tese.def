@@ -1,0 +1,3 @@
+\ProvidesFile{tese.def}[2003/02/03 Tese de Doutorado]
+\newcommand{\titlepagespecificinfo}{\tesespecificinfo}
+\def\@cipspecificinfo{\tesename}
